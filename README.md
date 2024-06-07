@@ -52,7 +52,7 @@ Once imported into GraphDB, MovieKG can be viewed as a visual graph on GraphDB W
 ![Screenshot 2024-05-21 171900](https://github.com/lilyhoanghg/MCQA/assets/30521679/8e869a8a-5686-4c54-a4f4-d864432d86ce)
 
 # MCQA benchmark dataset
-A sample from the MCQA validation set is presented here.
+MCQA contains a total of 157,764 question-asnwer pairs, including 4,135 different question templates, and 83 question types. A sample from the MCQA validation set is presented here.
 ```
 "qid": "mcqa-91c1fbfe-e67e-11ee-85f2-58961d663d9c",
 "question": "What actor starred in both [The Buddy Holly Story] and [Surviving the Game]?",
@@ -69,4 +69,4 @@ A sample from the MCQA validation set is presented here.
       ?rel rdfs:label \"starred_actors\" .
       ?uri rdfs:label ?label . }"
 ```
-Note that backslashes in the SPARQL have to be removed before querying on the knowledge graph. That is ```\"The Buddy Holly Story\"``` should become ```"The Buddy Holly Story"```.
+The wikidata entity ids are functional URLs that lead to the webpage containing information about the entity. Note that backslashes in the SPARQL have to be removed before querying on the knowledge graph. That is ```\"The Buddy Holly Story\"``` should become ```"The Buddy Holly Story"```.
