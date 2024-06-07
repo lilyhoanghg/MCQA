@@ -6,7 +6,7 @@ MCQA is a Movie Complex Question Answering benchmark dataset created with divers
 
 This repository is a guide to using the dataset, as instroduced in our paper: cite.
 
-# 1. Set up iMKG movie knowledge graph
+# Set up iMKG movie knowledge graph
 Download the knowledge graph data file iMKG.ttl included in the [download link above](https://drive.google.com/drive/folders/1q9ww9iSM52V5kGaFXw3q8-6cjCDP7YMq?usp=sharing).
 
 Steps to set up MovieKG:
@@ -19,6 +19,8 @@ Install GraphDB on your machine.
 2. Import iMKG data into GraphDB
 
 Ensure GraphDB is stopped.
+
+Download the provided repo-config.ttl to your machine.
 
 Use the following command to import data into GraphDB from command line, changing the paths in \<brackets\> to your local paths:
 
