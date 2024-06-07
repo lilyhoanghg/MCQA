@@ -4,7 +4,9 @@ The entire question answering dataset and knowledge graph can be downloaded [her
 # Introduction
 MCQA is a Movie Complex Question Answering benchmark dataset created with diverse question types, natural language questions, and SPARQL query for knowledge base question answering. The knowledge graph used is iMKG which is constructed from Wikimovies and Wikidata movie entities, following standard RDF format.
 
-This repository is a guide to using the dataset, as instroduced in our paper: cite.
+This repository is a guide to using the dataset, as instroduced in our paper: Lily Hoang, Fiona Liausvia, Liu Yan, and Thanh-Son Nguyen, *Semi-Automated Construction of Complex Knowledge Base Question Answering Dataset using Large Language Model*, ECML PKDD 2024.
+
+Source code for MCQA dataset construction using an automated KG sampling approach is also shared in this repository.
 
 # Set up iMKG movie knowledge graph
 Download the knowledge graph data file iMKG.ttl included in the [download link above](https://drive.google.com/drive/folders/1q9ww9iSM52V5kGaFXw3q8-6cjCDP7YMq?usp=sharing).
@@ -28,7 +30,7 @@ Use the following command to import data into GraphDB from command line, changin
 <graphdb-dist>/bin/importrdf load -c <path to file>/repo-config.ttl -m parallel <path to file>/iMKG.ttl
 ```
 
-Refer to documentation here: https://graphdb.ontotext.com/documentation/10.0/loading-data-using-importrdf.html
+Refer to documentation [here](https://graphdb.ontotext.com/documentation/10.0/loading-data-using-importrdf.html).
 
 3. Access iMKG using SPARQLWrapper in Python
 
@@ -70,7 +72,7 @@ MCQA contains a total of 157,764 question-asnwer pairs, including 4,135 differen
 ```
 The wikidata entity ids are functional URLs that lead to the webpage containing information about the entity. Note that backslashes in the SPARQL have to be removed before querying on the knowledge graph. That is ```\"Edge of Tomorrow\"``` should become ```"Edge of Tomorrow"```.
 
-Selected examples of question types found in the dataset are as follows. Refer to the paper for a full list of 83 question types.
+Selected examples of question types found in the dataset are as follows.
 |     Question     Category           |     Question Type                       |     Example                                                                                      |
 |-------------------------------------|-----------------------------------------|--------------------------------------------------------------------------------------------------|
 |     comparative                     |     compare_directors_num_movies        |     Which director has helmed a greater number of films,   [director] or [director]?             |
@@ -83,3 +85,5 @@ Selected examples of question types found in the dataset are as follows. Refer t
 |     superlative                     |     movie_release_first                 |     I'm curious, did [movie] debut before [movie]?                                               |
 |     yes/no                          |     yesno_actor_genre                   |     Has [actor] appeared in any movies of the [genre] genre?                                     |
 |     yes/no                          |     yesno_movie_same_director_writer    |     Was [Movie] penned and helmed by the same creative mind?                                     |
+
+These are just a few examples. Refer to the paper supplementary for a full list of 83 question types.
