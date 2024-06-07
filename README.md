@@ -76,8 +76,8 @@ The wikidata entity ids are functional URLs that lead to the webpage containing 
 |     count                           |     actor_year_num_movies               |     Find out the total number of movies featuring [actor] in   [year].                           |
 |     count                           |     movie_num_actors                    |     What's the total actor count for the film [movie]?                                           |
 |     difference                      |     director_movie_not_actor            |     Tell me which movies were directed by [director] without   [actor] in the cast.              |
-|     intersection/     constraint    |     director_year_movie                 |     Could you inform me about the actors in films directed by   [Director] during [Year]?        |
-|     intersection/     constraint    |     writer_director_movie               |     I'm interested in finding out the films written by [Writer]   and directed by [Director].    |
+|     intersection    |     director_year_movie                 |     Could you inform me about the actors in films directed by   [Director] during [Year]?        |
+|     intersection    |     writer_director_movie               |     I'm interested in finding out the films written by [Writer]   and directed by [Director].    |
 |     multi-hop                       |     movie_to_actor_constraint_movie     |     Can you help me remember who starred in both [movie] and [movie]?                            |
 |     superlative                     |     movie_release_first                 |     I'm curious, did [movie] debut before [movie]?                                               |
 |     yes/no                          |     yesno_actor_genre                   |     Has [actor] appeared in any movies of the [genre] genre?                                     |
