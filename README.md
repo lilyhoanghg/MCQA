@@ -6,6 +6,8 @@ MCQA is a Movie Complex Question Answering benchmark dataset created with divers
 
 This repository is a guide to using the dataset, as instroduced in our paper: cite.
 
+Source code for MCQA dataset construction using an automated KG sampling approach is also shared in this repository.
+
 # Set up iMKG movie knowledge graph
 Download the knowledge graph data file iMKG.ttl included in the [download link above](https://drive.google.com/drive/folders/1q9ww9iSM52V5kGaFXw3q8-6cjCDP7YMq?usp=sharing).
 
