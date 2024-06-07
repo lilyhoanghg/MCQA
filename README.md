@@ -20,9 +20,7 @@ Install GraphDB on your machine.
 
 Ensure GraphDB is stopped.
 
-Create a [configuration file](https://graphdb.ontotext.com/documentation/10.0/loading-data-using-importrdf.html#loading-data-using-importrdf-sample-configuration-template), or use the repo-config.ttl file provided.
-
-Use the following command to import data into GraphDB from command line, changing the paths to your local paths:
+Use the following command to import data into GraphDB from command line, changing the paths in <brackets> to your local paths:
 
 ```
 <graphdb-dist>/bin/importrdf load -c <path to file>/repo-config.ttl -m parallel <path to file>/iMKG.ttl
