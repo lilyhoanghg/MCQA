@@ -54,19 +54,18 @@ Once imported into GraphDB, MovieKG can be viewed as a visual graph on GraphDB W
 # MCQA benchmark dataset
 MCQA contains a total of 157,764 question-asnwer pairs, including 4,135 different question templates, and 83 question types. A sample from the MCQA validation set is presented here.
 ```
-"qid": "mcqa-91c1fbfe-e67e-11ee-85f2-58961d663d9c",
-"question": "What actor starred in both [The Buddy Holly Story] and [Surviving the Game]?",
+"qid": "mcqa-91c22325-e67e-11ee-adc7-58961d663d9c",
+"question": "Can you help me remember who starred in both [Edge of Tomorrow] and [Rain Man]?",
 "question_type": "movie_to_actor_constraint_movie",
-"topic_entity": [ "The Buddy Holly Story", "Surviving the Game" ],
+"topic_entity": ["Edge of Tomorrow", "Rain Man"],
 "topic_entity_id": [
-      "https://www.wikidata.org/entity/Q1211819",
-      "https://www.wikidata.org/entity/Q1461570" ],
-"answer": [ "Gary Busey" ],
-"answer_id": [ "https://www.wikidata.org/entity/Q312081" ],
-"sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE {
-      ?e1 ?rel ?uri; rdfs:label \"The Buddy Holly Story\" .
-      ?e3 ?rel ?uri; rdfs:label \"Surviving the Game\" .
+      "https://www.wikidata.org/entity/Q1187607",
+"answer": ["Tom Cruise"],
+"answer_id": ["https://www.wikidata.org/entity/Q37079"],
+"sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri
+      WHERE { ?e1 ?rel ?uri; rdfs:label \"Edge of Tomorrow\" .
+      ?e3 ?rel ?uri; rdfs:label \"Rain Man\" .
       ?rel rdfs:label \"starred_actors\" .
       ?uri rdfs:label ?label . }"
 ```
-The wikidata entity ids are functional URLs that lead to the webpage containing information about the entity. Note that backslashes in the SPARQL have to be removed before querying on the knowledge graph. That is ```\"The Buddy Holly Story\"``` should become ```"The Buddy Holly Story"```.
+The wikidata entity ids are functional URLs that lead to the webpage containing information about the entity. Note that backslashes in the SPARQL have to be removed before querying on the knowledge graph. That is ```\"Edge of Tomorrow\"``` should become ```"Edge of Tomorrow"```.
