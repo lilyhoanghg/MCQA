@@ -70,6 +70,7 @@ MCQA contains a total of 157,764 question-asnwer pairs, including 4,135 differen
 ```
 The wikidata entity ids are functional URLs that lead to the webpage containing information about the entity. Note that backslashes in the SPARQL have to be removed before querying on the knowledge graph. That is ```\"Edge of Tomorrow\"``` should become ```"Edge of Tomorrow"```.
 
+Selected examples of question types found in the dataset are as follows. Refer to the paper for a full list of question types.
 |     Question     Category           |     Question Type                       |     Example                                                                                      |
 |-------------------------------------|-----------------------------------------|--------------------------------------------------------------------------------------------------|
 |     comparative                     |     compare_directors_num_movies        |     Which director has helmed a greater number of films,   [director] or [director]?             |
@@ -78,7 +79,7 @@ The wikidata entity ids are functional URLs that lead to the webpage containing 
 |     difference                      |     director_movie_not_actor            |     Tell me which movies were directed by [director] without   [actor] in the cast.              |
 |     intersection    |     director_year_movie                 |     Could you inform me about the actors in films directed by   [Director] during [Year]?        |
 |     intersection    |     writer_director_movie               |     I'm interested in finding out the films written by [Writer]   and directed by [Director].    |
-|     multi-hop                       |     movie_to_actor_constraint_movie     |     Can you help me remember who starred in both [movie] and [movie]?                            |
+|     multi-hop, constraint                       |     movie_to_actor_constraint_movie     |     Can you help me remember who starred in both [movie] and [movie]?                            |
 |     superlative                     |     movie_release_first                 |     I'm curious, did [movie] debut before [movie]?                                               |
 |     yes/no                          |     yesno_actor_genre                   |     Has [actor] appeared in any movies of the [genre] genre?                                     |
 |     yes/no                          |     yesno_movie_same_director_writer    |     Was [Movie] penned and helmed by the same creative mind?                                     |
