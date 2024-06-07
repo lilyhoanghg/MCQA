@@ -30,7 +30,7 @@ Use the following command to import data into GraphDB from command line, changin
 <graphdb-dist>/bin/importrdf load -c <path to file>/repo-config.ttl -m parallel <path to file>/iMKG.ttl
 ```
 
-Refer to documentation here: https://graphdb.ontotext.com/documentation/10.0/loading-data-using-importrdf.html
+Refer to documentation [here](https://graphdb.ontotext.com/documentation/10.0/loading-data-using-importrdf.html).
 
 3. Access iMKG using SPARQLWrapper in Python
 
