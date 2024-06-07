@@ -1,6 +1,6 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
 
-sparql = SPARQLWrapper("http://localhost:7200/repositories/moviekg")
+sparql = SPARQLWrapper("http://localhost:7200/repositories/imkg")
 sparql.setReturnFormat(JSON)
 
 print("sparql: {}".format(sparql))

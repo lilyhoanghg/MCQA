@@ -34,7 +34,7 @@ def make_database_from_rdf(settings, verbose=False, time_start=None, hop_number=
 
         print("Processing {} ...".format(qtype))
 
-        sparql_query = SPARQLWrapper('http://localhost:7200/repositories/moviekg')
+        sparql_query = SPARQLWrapper('http://localhost:7200/repositories/imkg')
 
         sparql_query.setReturnFormat(JSON)
 

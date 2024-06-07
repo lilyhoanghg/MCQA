@@ -8,8 +8,8 @@
 @prefix graphdb: <http://www.ontotext.com/trree/graphdb#>.
 
 [] a rep:Repository ;
-    rep:repositoryID "moviekg" ;
-    rdfs:label "MovieKG" ;
+    rep:repositoryID "imkg" ;
+    rdfs:label "iMKG" ;
     rep:repositoryImpl [
     rep:repositoryType "graphdb:SailRepository" ;
     sr:sailImpl [
