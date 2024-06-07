@@ -20,7 +20,7 @@ Install GraphDB on your machine.
 
 Ensure GraphDB is stopped.
 
-Use the following command to import data into GraphDB from command line, changing the paths in <brackets> to your local paths:
+Use the following command to import data into GraphDB from command line, changing the paths in \<brackets\> to your local paths:
 
 ```
 <graphdb-dist>/bin/importrdf load -c <path to file>/repo-config.ttl -m parallel <path to file>/iMKG.ttl
