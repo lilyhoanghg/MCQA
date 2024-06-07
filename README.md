@@ -4,7 +4,7 @@ The entire question answering dataset and knowledge graph can be downloaded [her
 # Introduction
 MCQA is a Movie Complex Question Answering benchmark dataset created with diverse question types, natural language questions, and SPARQL query for knowledge base question answering. The knowledge graph used is iMKG which is constructed from Wikimovies and Wikidata movie entities, following standard RDF format.
 
-This repository is a guide to using the dataset, as instroduced in our paper: cite.
+This repository is a guide to using the dataset, as instroduced in our paper: Lily Hoang, Fiona Liausvia, Liu Yan, and Thanh-Son Nguyen, *Semi-Automated Construction of Complex Knowledge Base Question Answering Dataset using Large Language Model*, ECML PKDD 2024.
 
 Source code for MCQA dataset construction using an automated KG sampling approach is also shared in this repository.
 
