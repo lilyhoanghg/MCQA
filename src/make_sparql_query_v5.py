@@ -2,9 +2,8 @@
 Simplify SPARQL queries.
 '''
 
-from src.lilyhg.MCQA.utils import *
-# from src.lilyhg.MetaQA_2.constants import *
-from src.lilyhg.MCQA.generate_qa_using_rdf_kb_wikidata.constants import *
+from src.utils import *
+from src.constants import *
 
 def make_sparql_query(qtype, topic_entity_id, constraint_entity_id):
     no_of_hop = get_no_of_hop(qtype)

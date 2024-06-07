@@ -1,4 +1,4 @@
-from src.lilyhg.MetaQA_2.generate_qa_using_rdf_kb.constants import *
+from src.constants import *
 
 def uri_2_short_id(uri):
     return uri.split(KB_URI)[-1]
