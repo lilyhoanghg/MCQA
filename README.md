@@ -69,4 +69,4 @@ A sample from the MCQA validation set is presented here.
       ?rel rdfs:label \"starred_actors\" .
       ?uri rdfs:label ?label . }"
 ```
-Note that backslashes in the SPARQL have to be removed before querying on the knowledge graph. That is \"The Buddy Holly Story\" should become "The Buddy Holly Story".
+Note that backslashes in the SPARQL have to be removed before querying on the knowledge graph. That is ```\"The Buddy Holly Story\"``` should become ```"The Buddy Holly Story"```.
