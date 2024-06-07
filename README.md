@@ -86,4 +86,4 @@ Selected examples of question types found in the dataset are as follows.
 |     yes/no                          |     yesno_actor_genre                   |     Has [actor] appeared in any movies of the [genre] genre?                                     |
 |     yes/no                          |     yesno_movie_same_director_writer    |     Was [Movie] penned and helmed by the same creative mind?                                     |
 
-These are just a few examples. Refer to the paper for a full list of 83 question types.
+These are just a few examples. Refer to the paper supplementary for a full list of 83 question types.
