@@ -6,8 +6,6 @@ MCQA is a Movie Complex Question Answering benchmark dataset created with divers
 
 This repository is a guide to using the dataset, as instroduced in our paper: Lily Hoang, Fiona Liausvia, Liu Yan, and Thanh-Son Nguyen, *Semi-Automated Construction of Complex Knowledge Base Question Answering Dataset using Large Language Model*, ECML PKDD 2024.
 
-Source code for MCQA dataset construction using an automated KG sampling approach is also shared in this repository.
-
 # Set up iMKG movie knowledge graph
 Download the knowledge graph data file iMKG.ttl included in the [download link above](https://drive.google.com/drive/folders/1q9ww9iSM52V5kGaFXw3q8-6cjCDP7YMq?usp=sharing).
 
@@ -86,4 +84,4 @@ Selected examples of question types found in the dataset are as follows.
 |     yes/no                          |     yesno_actor_genre                   |     Has [actor] appeared in any movies of the [genre] genre?                                     |
 |     yes/no                          |     yesno_movie_same_director_writer    |     Was [Movie] penned and helmed by the same creative mind?                                     |
 
-These are just a few examples. Refer to the paper supplementary for a full list of 83 question types.
+These are just a few examples. Refer to document supplementary.pdf for a full list of 83 question types.
