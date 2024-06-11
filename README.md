@@ -1,6 +1,7 @@
 # Download
 The entire question answering dataset and knowledge graph can be downloaded [here](https://drive.google.com/drive/folders/1q9ww9iSM52V5kGaFXw3q8-6cjCDP7YMq?usp=sharing).
-All data is licensed under CC BY 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/
+
+All data is licensed under CC BY 4.0. A copy is included with the data.
 
 # Introduction
 MCQA is a Movie Complex Question Answering benchmark dataset created with diverse question types, natural language questions, and SPARQL query for knowledge base question answering. The knowledge graph used is iMKG which is constructed from Wikimovies and Wikidata movie entities, following standard RDF format.
